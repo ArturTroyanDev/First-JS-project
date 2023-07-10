@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* свойство, которое определяет модель размеров элемента внутри блочной модели. */
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+
+.col {
+  flex: 1; /* Распространение элементов по всей ширине экрана с занятием одинакового пространства*/
+  display: flex;
+  flex-direction: column; /* свойство, которое определяет направление расположения элементов внутри контейнера с использованием Flexbox. */
+  justify-content: space-around; /* Делает равные вертикальный отступы */
+  align-items: center;
+}
+
+.col h2 {
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+  transition: background 0.3s;
+  font-size: 35px;
+}
+
+.col h2:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.col button {
+  outline: none;
+  border: none;
+  background: transparent; /* убирает бекграунд */
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background 0.3s;
+  font-size: 35px;
+}
+
+.col button:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
